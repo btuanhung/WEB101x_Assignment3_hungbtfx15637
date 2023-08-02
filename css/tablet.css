@@ -1,0 +1,72 @@
+@media (max-width: 768px) {
+  /* ảnh tại navbar */
+  .menubar::after {
+    display: none;
+  }
+  .menubar {
+    width: 50px;
+  }
+  /*  */
+  .profile {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* Certificates */
+
+  .cert_web,
+  .cert_prf,
+  .cert_dbi {
+    display: block;
+  }
+
+  /* Projects */
+  .prj-times > div {
+    display: flex;
+  }
+  .description,
+  .mission,
+  .technology {
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+  .description {
+    min-height: 260px;
+  }
+  .prj {
+    display: block;
+  }
+
+  /* Project Charter */
+  #digital-cv,
+  .goals > div,
+  .teams > div {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .scopes-desc {
+    display: block;
+  }
+
+  .serial {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background-color: #ac80ff;
+  }
+
+  .member > a {
+    align-self: center;
+  }
+
+  .primary-desc > div {
+    flex-direction: column;
+  }
+  .primary-desc > div > i {
+    align-self: center;
+  }
+
+  .timeline-content > div {
+    flex-direction: column;
+    align-items: start;
+  }
+}

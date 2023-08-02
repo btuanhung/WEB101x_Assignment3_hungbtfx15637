@@ -1,0 +1,65 @@
+@media (max-width: 576px) {
+  /* ảnh tại navbar */
+  .menubar {
+    display: none;
+  }
+  .nav-bar {
+    display: grid;
+    justify-items: left;
+  }
+  /* Information */
+  #information {
+    display: block;
+  }
+
+  /* Profile */
+  .profile {
+    grid-template-columns: 1fr;
+  }
+
+  /* Certificate */
+  .certificate {
+    display: block;
+  }
+  .cert_web,
+  .cert_prf,
+  .cert_dbi {
+    display: block;
+  }
+
+  .cert_web,
+  .cert_prf {
+    border-bottom: 2px solid rgb(255, 228, 177);
+    border-left: none;
+  }
+
+  /* Projects */
+  .projects {
+    display: block;
+  }
+  .description,
+  .mission,
+  .technology {
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+  .description {
+    min-height: 180px;
+  }
+  .prj-times > div {
+    flex-direction: column;
+  }
+  .prj {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    justify-content: start;
+  }
+
+  /* Footer */
+  .fb,
+  .in,
+  .git {
+    display: none;
+  }
+}

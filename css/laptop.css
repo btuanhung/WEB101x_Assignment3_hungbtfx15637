@@ -1,0 +1,214 @@
+html {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#banner > h1 {
+  padding-top: 120px;
+}
+
+#navbar > nav > div > a {
+  width: 1fr;
+  text-align: center;
+}
+
+.align-text {
+  text-align: justify;
+}
+
+.color-text {
+  color: black;
+}
+
+.ul {
+  list-style-type: '- ';
+}
+
+.hide {
+  display: none;
+}
+/* cài đặt background trong navbar */
+.banner {
+  background-image:
+   /*Tạo hiệu ứng gradient*/ linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.4)
+    ),
+    /* đường dẫn đến ảnh banner */ url(../images/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 550px;
+  text-align: center;
+}
+
+/* cài đặt ảnh menu */
+.menubar {
+  position: relative;
+  width: 150px;
+}
+.menubar::after {
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid rgb(213, 220, 255);
+  background-image: url('../images/Hung.png');
+  background-size: cover;
+  top: -100%;
+  left: 1%;
+}
+
+/* Navbar */
+
+.nav-bar {
+  display: inline-flex;
+  justify-content: center;
+}
+
+/* Thông tin các nhân, Mục tiêu nghề nghiệp */
+#information {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.info {
+  background-color: rgb(219, 219, 219);
+}
+
+.target,
+.info {
+  width: 1fr;
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  background-color: inherit;
+  grid-template-columns: 250px auto;
+  margin-bottom: 10px;
+}
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: -25px;
+  background-color: #1d9dd9;
+  border: 3px solid rgb(235, 235, 235);
+  top: 3px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Profile */
+.profile {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+/* đặt chiều cao tối thiểu của các block trong lý lịch */
+.experiences,
+.educations,
+.activities,
+.interests,
+.languages,
+.p-skills {
+  min-height: 180px;
+}
+
+/* vòng trồn cho icon */
+.icon {
+  border-radius: 50%;
+  padding: 10px 0;
+}
+
+/* thanh skill */
+.level {
+  height: 10px;
+}
+
+/* Certificate */
+.certificate {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.cert_web,
+.cert_prf,
+.cert_dbi {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.cert_web,
+.cert_prf {
+  border-bottom: 2px solid rgb(255, 228, 177);
+}
+.cert_prf {
+  border-left: 2px solid rgb(255, 228, 177);
+}
+/* Projects */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.description,
+.mission,
+.technology {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+.description {
+  height: auto;
+  min-height: 114px;
+}
+.prj-times > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.prj {
+  display: inline-flex;
+  gap: 20px;
+}
+
+/* digital-cv.html */
+#digital-cv {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+.scopes-desc {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.serial {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background-color: #ac80ff;
+}
+.scopes {
+  grid-row: 2/3;
+}
+.timelines {
+  grid-area: 1/3/3/4;
+}
+.timeline-content > div {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px dashed rgb(160, 208, 255);
+}
